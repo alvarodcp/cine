@@ -4,6 +4,9 @@ total_recaudado = 0
 total_pagado = 0
 capacidad = 0
 precio_entrada = 0
+precio_entrada_am = 0
+precio_entrada_n = 0
+tipo_entrada = -1 # los valores válidos son 0, entrada general, 1 niño, 2 adulto mayor
 
 # Mostrar el menú.
 while True :
@@ -34,7 +37,9 @@ while True :
             print("Mostrar recaudación")
         case 4: # opción de configuración del sistema.
             capacidad = int(input("Digite la capacidad de la sala: "))
-            precio_entrada = int(input("Digite el precio de la entrada: "))
+            precio_entrada = int(input("Digite el precio de la entrada general: "))
+            precio_entrada_am = int(input("Digite el precio de la entrada para adultos mayores: "))
+            precio_entrada_n = int(input("Digite el precio de la entrdada para niños: "))
         case 0:
             print("Cerrando el programa....")
             break
